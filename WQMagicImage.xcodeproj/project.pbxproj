@@ -15,6 +15,9 @@
 		5943E1B9251443580016D02C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5943E1B8251443580016D02C /* main.m */; };
 		5943E1C3251443580016D02C /* WQMagicImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5943E1C2251443580016D02C /* WQMagicImageTests.m */; };
 		5943E1CE251443580016D02C /* WQMagicImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5943E1CD251443580016D02C /* WQMagicImageUITests.m */; };
+		5943E1DE2519A62C0016D02C /* SizeHeightWithContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5943E1DD2519A62C0016D02C /* SizeHeightWithContent.m */; };
+		5943E1E2251B26AD0016D02C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5943E1E1251B26AD0016D02C /* MainViewController.m */; };
+		7CB8B2823563E5F03E7314C1 /* libPods-WQMagicImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C9A2EE59E22044DE8B1E29C /* libPods-WQMagicImage.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,13 @@
 		5943E1C9251443580016D02C /* WQMagicImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WQMagicImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5943E1CD251443580016D02C /* WQMagicImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WQMagicImageUITests.m; sourceTree = "<group>"; };
 		5943E1CF251443580016D02C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5943E1DC2519A62C0016D02C /* SizeHeightWithContent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SizeHeightWithContent.h; sourceTree = "<group>"; };
+		5943E1DD2519A62C0016D02C /* SizeHeightWithContent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SizeHeightWithContent.m; sourceTree = "<group>"; };
+		5943E1E0251B26AD0016D02C /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		5943E1E1251B26AD0016D02C /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		5C9A2EE59E22044DE8B1E29C /* libPods-WQMagicImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WQMagicImage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A095BD0248442FAD1A4F86E2 /* Pods-WQMagicImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WQMagicImage.debug.xcconfig"; path = "Target Support Files/Pods-WQMagicImage/Pods-WQMagicImage.debug.xcconfig"; sourceTree = "<group>"; };
+		B5A5D2C621C4893DCC21A31E /* Pods-WQMagicImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WQMagicImage.release.xcconfig"; path = "Target Support Files/Pods-WQMagicImage/Pods-WQMagicImage.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CB8B2823563E5F03E7314C1 /* libPods-WQMagicImage.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +96,8 @@
 				5943E1C1251443580016D02C /* WQMagicImageTests */,
 				5943E1CC251443580016D02C /* WQMagicImageUITests */,
 				5943E1A4251443550016D02C /* Products */,
+				B25F4EB2BAA592CA6EABE4DC /* Pods */,
+				F87A754F3C9BCB993819EF34 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,8 +116,12 @@
 			children = (
 				5943E1A6251443550016D02C /* AppDelegate.h */,
 				5943E1A7251443550016D02C /* AppDelegate.m */,
+				5943E1DC2519A62C0016D02C /* SizeHeightWithContent.h */,
+				5943E1DD2519A62C0016D02C /* SizeHeightWithContent.m */,
 				5943E1AC251443550016D02C /* ViewController.h */,
 				5943E1AD251443550016D02C /* ViewController.m */,
+				5943E1E0251B26AD0016D02C /* MainViewController.h */,
+				5943E1E1251B26AD0016D02C /* MainViewController.m */,
 				5943E1AF251443550016D02C /* Main.storyboard */,
 				5943E1B2251443580016D02C /* Assets.xcassets */,
 				5943E1B4251443580016D02C /* LaunchScreen.storyboard */,
@@ -132,6 +149,23 @@
 			path = WQMagicImageUITests;
 			sourceTree = "<group>";
 		};
+		B25F4EB2BAA592CA6EABE4DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A095BD0248442FAD1A4F86E2 /* Pods-WQMagicImage.debug.xcconfig */,
+				B5A5D2C621C4893DCC21A31E /* Pods-WQMagicImage.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F87A754F3C9BCB993819EF34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C9A2EE59E22044DE8B1E29C /* libPods-WQMagicImage.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +173,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5943E1D2251443580016D02C /* Build configuration list for PBXNativeTarget "WQMagicImage" */;
 			buildPhases = (
+				1F844106138DA5A3B5B7508B /* [CP] Check Pods Manifest.lock */,
 				5943E19F251443550016D02C /* Sources */,
 				5943E1A0251443550016D02C /* Frameworks */,
 				5943E1A1251443550016D02C /* Resources */,
@@ -257,13 +292,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F844106138DA5A3B5B7508B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WQMagicImage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5943E19F251443550016D02C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5943E1AE251443550016D02C /* ViewController.m in Sources */,
+				5943E1DE2519A62C0016D02C /* SizeHeightWithContent.m in Sources */,
 				5943E1A8251443550016D02C /* AppDelegate.m in Sources */,
+				5943E1E2251B26AD0016D02C /* MainViewController.m in Sources */,
 				5943E1B9251443580016D02C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,7 +431,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +483,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -431,6 +493,7 @@
 		};
 		5943E1D3251443580016D02C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A095BD0248442FAD1A4F86E2 /* Pods-WQMagicImage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +510,7 @@
 		};
 		5943E1D4251443580016D02C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5A5D2C621C4893DCC21A31E /* Pods-WQMagicImage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
