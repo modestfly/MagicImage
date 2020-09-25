@@ -17,6 +17,9 @@
 		5943E1CE251443580016D02C /* WQMagicImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5943E1CD251443580016D02C /* WQMagicImageUITests.m */; };
 		5943E1DE2519A62C0016D02C /* SizeHeightWithContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 5943E1DD2519A62C0016D02C /* SizeHeightWithContent.m */; };
 		5943E1E2251B26AD0016D02C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5943E1E1251B26AD0016D02C /* MainViewController.m */; };
+		5943E1E5251C3ADB0016D02C /* image.order in Resources */ = {isa = PBXBuildFile; fileRef = 5943E1E4251C3ADB0016D02C /* image.order */; };
+		5943E1EF251DEF150016D02C /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 5943E1EE251DEF150016D02C /* Utilities.m */; };
+		5943E1F2251DF14A0016D02C /* UIToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5943E1F1251DF14A0016D02C /* UIToastView.m */; };
 		7CB8B2823563E5F03E7314C1 /* libPods-WQMagicImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C9A2EE59E22044DE8B1E29C /* libPods-WQMagicImage.a */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +61,11 @@
 		5943E1DD2519A62C0016D02C /* SizeHeightWithContent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SizeHeightWithContent.m; sourceTree = "<group>"; };
 		5943E1E0251B26AD0016D02C /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		5943E1E1251B26AD0016D02C /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		5943E1E4251C3ADB0016D02C /* image.order */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = image.order; sourceTree = "<group>"; };
+		5943E1ED251DEF150016D02C /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		5943E1EE251DEF150016D02C /* Utilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		5943E1F0251DF14A0016D02C /* UIToastView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIToastView.h; sourceTree = "<group>"; };
+		5943E1F1251DF14A0016D02C /* UIToastView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIToastView.m; sourceTree = "<group>"; };
 		5C9A2EE59E22044DE8B1E29C /* libPods-WQMagicImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WQMagicImage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A095BD0248442FAD1A4F86E2 /* Pods-WQMagicImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WQMagicImage.debug.xcconfig"; path = "Target Support Files/Pods-WQMagicImage/Pods-WQMagicImage.debug.xcconfig"; sourceTree = "<group>"; };
 		B5A5D2C621C4893DCC21A31E /* Pods-WQMagicImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WQMagicImage.release.xcconfig"; path = "Target Support Files/Pods-WQMagicImage/Pods-WQMagicImage.release.xcconfig"; sourceTree = "<group>"; };
@@ -114,10 +122,13 @@
 		5943E1A5251443550016D02C /* WQMagicImage */ = {
 			isa = PBXGroup;
 			children = (
-				5943E1A6251443550016D02C /* AppDelegate.h */,
-				5943E1A7251443550016D02C /* AppDelegate.m */,
-				5943E1DC2519A62C0016D02C /* SizeHeightWithContent.h */,
-				5943E1DD2519A62C0016D02C /* SizeHeightWithContent.m */,
+				5943E1EC251DEEB40016D02C /* 首页代理模块 */,
+				5943E1EB251DEE960016D02C /* 三方库封装模块 */,
+				5943E1EA251DEE8D0016D02C /* 分类模块 */,
+				5943E1E9251DEE660016D02C /* 基础模块 */,
+				5943E1E8251DEE5C0016D02C /* 功能模块 */,
+				5943E1E7251DEE340016D02C /* 管理模块 */,
+				5943E1E3251C3AB50016D02C /* 资源文件模块 */,
 				5943E1AC251443550016D02C /* ViewController.h */,
 				5943E1AD251443550016D02C /* ViewController.m */,
 				5943E1E0251B26AD0016D02C /* MainViewController.h */,
@@ -125,8 +136,8 @@
 				5943E1AF251443550016D02C /* Main.storyboard */,
 				5943E1B2251443580016D02C /* Assets.xcassets */,
 				5943E1B4251443580016D02C /* LaunchScreen.storyboard */,
-				5943E1B7251443580016D02C /* Info.plist */,
 				5943E1B8251443580016D02C /* main.m */,
+				5943E1B7251443580016D02C /* Info.plist */,
 			);
 			path = WQMagicImage;
 			sourceTree = "<group>";
@@ -147,6 +158,64 @@
 				5943E1CF251443580016D02C /* Info.plist */,
 			);
 			path = WQMagicImageUITests;
+			sourceTree = "<group>";
+		};
+		5943E1E3251C3AB50016D02C /* 资源文件模块 */ = {
+			isa = PBXGroup;
+			children = (
+				5943E1E4251C3ADB0016D02C /* image.order */,
+			);
+			path = "资源文件模块";
+			sourceTree = "<group>";
+		};
+		5943E1E7251DEE340016D02C /* 管理模块 */ = {
+			isa = PBXGroup;
+			children = (
+				5943E1ED251DEF150016D02C /* Utilities.h */,
+				5943E1EE251DEF150016D02C /* Utilities.m */,
+			);
+			path = "管理模块";
+			sourceTree = "<group>";
+		};
+		5943E1E8251DEE5C0016D02C /* 功能模块 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "功能模块";
+			sourceTree = "<group>";
+		};
+		5943E1E9251DEE660016D02C /* 基础模块 */ = {
+			isa = PBXGroup;
+			children = (
+				5943E1DC2519A62C0016D02C /* SizeHeightWithContent.h */,
+				5943E1DD2519A62C0016D02C /* SizeHeightWithContent.m */,
+				5943E1F0251DF14A0016D02C /* UIToastView.h */,
+				5943E1F1251DF14A0016D02C /* UIToastView.m */,
+			);
+			path = "基础模块";
+			sourceTree = "<group>";
+		};
+		5943E1EA251DEE8D0016D02C /* 分类模块 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "分类模块";
+			sourceTree = "<group>";
+		};
+		5943E1EB251DEE960016D02C /* 三方库封装模块 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "三方库封装模块";
+			sourceTree = "<group>";
+		};
+		5943E1EC251DEEB40016D02C /* 首页代理模块 */ = {
+			isa = PBXGroup;
+			children = (
+				5943E1A6251443550016D02C /* AppDelegate.h */,
+				5943E1A7251443550016D02C /* AppDelegate.m */,
+			);
+			path = "首页代理模块";
 			sourceTree = "<group>";
 		};
 		B25F4EB2BAA592CA6EABE4DC /* Pods */ = {
@@ -270,6 +339,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5943E1E5251C3ADB0016D02C /* image.order in Resources */,
 				5943E1B6251443580016D02C /* LaunchScreen.storyboard in Resources */,
 				5943E1B3251443580016D02C /* Assets.xcassets in Resources */,
 				5943E1B1251443550016D02C /* Main.storyboard in Resources */,
@@ -322,9 +392,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5943E1EF251DEF150016D02C /* Utilities.m in Sources */,
 				5943E1AE251443550016D02C /* ViewController.m in Sources */,
 				5943E1DE2519A62C0016D02C /* SizeHeightWithContent.m in Sources */,
 				5943E1A8251443550016D02C /* AppDelegate.m in Sources */,
+				5943E1F2251DF14A0016D02C /* UIToastView.m in Sources */,
 				5943E1E2251B26AD0016D02C /* MainViewController.m in Sources */,
 				5943E1B9251443580016D02C /* main.m in Sources */,
 			);
@@ -502,6 +574,27 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ORDER_FILE = "";
+				OTHER_CFLAGS = "-fsanitize-coverage=func,trace-pc-guard";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"AppOrderFiles\"",
+					"-l\"FBRetainCycleDetector\"",
+					"-l\"MLeaksFinder\"",
+					"-l\"Masonry\"",
+					"-l\"SDWebImage\"",
+					"-l\"c++\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = WQFPerson.WQMagicImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -518,6 +611,27 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				ORDER_FILE = "";
+				OTHER_CFLAGS = "-fsanitize-coverage=func,trace-pc-guard";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"AppOrderFiles\"",
+					"-l\"FBRetainCycleDetector\"",
+					"-l\"MLeaksFinder\"",
+					"-l\"Masonry\"",
+					"-l\"SDWebImage\"",
+					"-l\"c++\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"UIKit\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = WQFPerson.WQMagicImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";

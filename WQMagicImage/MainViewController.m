@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "ViewController.h"
+#import <AppOrderFiles.h>
 @interface MainViewController ()
 @property (nonatomic, strong) NSTimer *testTimer;
 @end
@@ -29,6 +30,10 @@
     [button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:button];
+    //测试二进制重排
+    AppOrderFiles(^(NSString *orderFilePath) {
+        NSLog(@"OderFilePath:%@",orderFilePath);
+    });
     
     // Do any additional setup after loading the view.
 }

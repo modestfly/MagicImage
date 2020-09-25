@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
+  - AppOrderFiles (1.0.2)
   - FBRetainCycleDetector (0.1.4)
   - Masonry (1.1.0)
   - MLeaksFinder (1.0.0):
@@ -24,6 +25,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 4.0.0)
+  - AppOrderFiles (~> 1.0.2)
   - Masonry (~> 1.1.0)
   - MLeaksFinder
   - SDWebImage (~> 5.9.0)
@@ -31,6 +33,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - AppOrderFiles
     - FBRetainCycleDetector
     - Masonry
     - MLeaksFinder
@@ -38,11 +41,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  AppOrderFiles: ce8436cdae89e5831b93961ebc81415a3481c5a6
   FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
   SDWebImage: a990c053fff71e388a10f3357edb0be17929c9c5
 
-PODFILE CHECKSUM: 52479319d63a459c802b42324034a7e284cc1b70
+PODFILE CHECKSUM: 97169d7aa17323d1c3853e2b1006a9db3b5af060
 
 COCOAPODS: 1.9.3
