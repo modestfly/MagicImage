@@ -20,6 +20,14 @@
 		5943E1E5251C3ADB0016D02C /* image.order in Resources */ = {isa = PBXBuildFile; fileRef = 5943E1E4251C3ADB0016D02C /* image.order */; };
 		5943E1EF251DEF150016D02C /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 5943E1EE251DEF150016D02C /* Utilities.m */; };
 		5943E1F2251DF14A0016D02C /* UIToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5943E1F1251DF14A0016D02C /* UIToastView.m */; };
+		5943E1F42522FF740016D02C /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 5943E1F32522FF740016D02C /* test.png */; };
+		5943E1F725241A530016D02C /* testView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5943E1F625241A530016D02C /* testView.m */; };
+		5943E1FF2530557C0016D02C /* WMTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5943E1FE2530557C0016D02C /* WMTabBarViewController.m */; };
+		5943E202253056B10016D02C /* WMTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5943E201253056B10016D02C /* WMTabBar.m */; };
+		5943E2052530595F0016D02C /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5943E2042530595F0016D02C /* MineViewController.m */; };
+		5943E208253059700016D02C /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5943E207253059700016D02C /* MessageViewController.m */; };
+		5943E20B253059830016D02C /* MainPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5943E20A253059830016D02C /* MainPageViewController.m */; };
+		5943E20E253059AD0016D02C /* ToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5943E20D253059AD0016D02C /* ToolViewController.m */; };
 		7CB8B2823563E5F03E7314C1 /* libPods-WQMagicImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C9A2EE59E22044DE8B1E29C /* libPods-WQMagicImage.a */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +74,21 @@
 		5943E1EE251DEF150016D02C /* Utilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
 		5943E1F0251DF14A0016D02C /* UIToastView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIToastView.h; sourceTree = "<group>"; };
 		5943E1F1251DF14A0016D02C /* UIToastView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIToastView.m; sourceTree = "<group>"; };
+		5943E1F32522FF740016D02C /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		5943E1F525241A530016D02C /* testView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testView.h; sourceTree = "<group>"; };
+		5943E1F625241A530016D02C /* testView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testView.m; sourceTree = "<group>"; };
+		5943E1FD2530557C0016D02C /* WMTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMTabBarViewController.h; sourceTree = "<group>"; };
+		5943E1FE2530557C0016D02C /* WMTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMTabBarViewController.m; sourceTree = "<group>"; };
+		5943E200253056B10016D02C /* WMTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMTabBar.h; sourceTree = "<group>"; };
+		5943E201253056B10016D02C /* WMTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMTabBar.m; sourceTree = "<group>"; };
+		5943E2032530595F0016D02C /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		5943E2042530595F0016D02C /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		5943E206253059700016D02C /* MessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		5943E207253059700016D02C /* MessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		5943E209253059830016D02C /* MainPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainPageViewController.h; sourceTree = "<group>"; };
+		5943E20A253059830016D02C /* MainPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainPageViewController.m; sourceTree = "<group>"; };
+		5943E20C253059AD0016D02C /* ToolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolViewController.h; sourceTree = "<group>"; };
+		5943E20D253059AD0016D02C /* ToolViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolViewController.m; sourceTree = "<group>"; };
 		5C9A2EE59E22044DE8B1E29C /* libPods-WQMagicImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WQMagicImage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A095BD0248442FAD1A4F86E2 /* Pods-WQMagicImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WQMagicImage.debug.xcconfig"; path = "Target Support Files/Pods-WQMagicImage/Pods-WQMagicImage.debug.xcconfig"; sourceTree = "<group>"; };
 		B5A5D2C621C4893DCC21A31E /* Pods-WQMagicImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WQMagicImage.release.xcconfig"; path = "Target Support Files/Pods-WQMagicImage/Pods-WQMagicImage.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +154,8 @@
 				5943E1E3251C3AB50016D02C /* 资源文件模块 */,
 				5943E1AC251443550016D02C /* ViewController.h */,
 				5943E1AD251443550016D02C /* ViewController.m */,
+				5943E1F525241A530016D02C /* testView.h */,
+				5943E1F625241A530016D02C /* testView.m */,
 				5943E1E0251B26AD0016D02C /* MainViewController.h */,
 				5943E1E1251B26AD0016D02C /* MainViewController.m */,
 				5943E1AF251443550016D02C /* Main.storyboard */,
@@ -163,6 +188,7 @@
 		5943E1E3251C3AB50016D02C /* 资源文件模块 */ = {
 			isa = PBXGroup;
 			children = (
+				5943E1F32522FF740016D02C /* test.png */,
 				5943E1E4251C3ADB0016D02C /* image.order */,
 			);
 			path = "资源文件模块";
@@ -180,6 +206,14 @@
 		5943E1E8251DEE5C0016D02C /* 功能模块 */ = {
 			isa = PBXGroup;
 			children = (
+				5943E1FC253052530016D02C /* 工具 */,
+				5943E1FB253052450016D02C /* 首页 */,
+				5943E1FA2530523F0016D02C /* 消息 */,
+				5943E1F9253052360016D02C /* 我的 */,
+				5943E1FD2530557C0016D02C /* WMTabBarViewController.h */,
+				5943E1FE2530557C0016D02C /* WMTabBarViewController.m */,
+				5943E200253056B10016D02C /* WMTabBar.h */,
+				5943E201253056B10016D02C /* WMTabBar.m */,
 			);
 			path = "功能模块";
 			sourceTree = "<group>";
@@ -216,6 +250,42 @@
 				5943E1A7251443550016D02C /* AppDelegate.m */,
 			);
 			path = "首页代理模块";
+			sourceTree = "<group>";
+		};
+		5943E1F9253052360016D02C /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				5943E2032530595F0016D02C /* MineViewController.h */,
+				5943E2042530595F0016D02C /* MineViewController.m */,
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
+		5943E1FA2530523F0016D02C /* 消息 */ = {
+			isa = PBXGroup;
+			children = (
+				5943E206253059700016D02C /* MessageViewController.h */,
+				5943E207253059700016D02C /* MessageViewController.m */,
+			);
+			path = "消息";
+			sourceTree = "<group>";
+		};
+		5943E1FB253052450016D02C /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				5943E209253059830016D02C /* MainPageViewController.h */,
+				5943E20A253059830016D02C /* MainPageViewController.m */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		5943E1FC253052530016D02C /* 工具 */ = {
+			isa = PBXGroup;
+			children = (
+				5943E20C253059AD0016D02C /* ToolViewController.h */,
+				5943E20D253059AD0016D02C /* ToolViewController.m */,
+			);
+			path = "工具";
 			sourceTree = "<group>";
 		};
 		B25F4EB2BAA592CA6EABE4DC /* Pods */ = {
@@ -340,6 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5943E1E5251C3ADB0016D02C /* image.order in Resources */,
+				5943E1F42522FF740016D02C /* test.png in Resources */,
 				5943E1B6251443580016D02C /* LaunchScreen.storyboard in Resources */,
 				5943E1B3251443580016D02C /* Assets.xcassets in Resources */,
 				5943E1B1251443550016D02C /* Main.storyboard in Resources */,
@@ -392,11 +463,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5943E1F725241A530016D02C /* testView.m in Sources */,
+				5943E202253056B10016D02C /* WMTabBar.m in Sources */,
+				5943E20E253059AD0016D02C /* ToolViewController.m in Sources */,
 				5943E1EF251DEF150016D02C /* Utilities.m in Sources */,
 				5943E1AE251443550016D02C /* ViewController.m in Sources */,
 				5943E1DE2519A62C0016D02C /* SizeHeightWithContent.m in Sources */,
+				5943E2052530595F0016D02C /* MineViewController.m in Sources */,
+				5943E20B253059830016D02C /* MainPageViewController.m in Sources */,
+				5943E208253059700016D02C /* MessageViewController.m in Sources */,
 				5943E1A8251443550016D02C /* AppDelegate.m in Sources */,
 				5943E1F2251DF14A0016D02C /* UIToastView.m in Sources */,
+				5943E1FF2530557C0016D02C /* WMTabBarViewController.m in Sources */,
 				5943E1E2251B26AD0016D02C /* MainViewController.m in Sources */,
 				5943E1B9251443580016D02C /* main.m in Sources */,
 			);

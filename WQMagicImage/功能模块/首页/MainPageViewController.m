@@ -1,25 +1,26 @@
 //
-//  MainViewController.m
+//  MainPageViewController.m
 //  WQMagicImage
 //
-//  Created by 王其飞 on 2020/9/23.
+//  Created by 王其飞 on 2020/10/9.
 //  Copyright © 2020 王其飞. All rights reserved.
 //
 
-#import "MainViewController.h"
-#import <AppOrderFiles.h>
-@interface MainViewController ()
-@property (nonatomic, strong) NSTimer *testTimer;
+#import "MainPageViewController.h"
+#import "ViewController.h"
+@interface MainPageViewController ()
+
 @end
 
-@implementation MainViewController
+@implementation MainPageViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.testTimer = [NSTimer timerWithTimeInterval:1.0 target:self selector:@selector(test) userInfo:nil repeats:YES];
     
-     [[NSRunLoop currentRunLoop] addTimer:self.testTimer forMode:NSDefaultRunLoopMode];
-    self.view.backgroundColor = [UIColor  grayColor];
+    self.navigationController.navigationBar.backgroundColor = [UIColor redColor];
+
+    self.view.backgroundColor = [UIColor lightGrayColor];
+
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     
     button.frame = CGRectMake(100, 100, 100, 100);
@@ -29,21 +30,12 @@
     [button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:button];
-    
     // Do any additional setup after loading the view.
 }
-- (void)test{
-    NSLog(@"222222");
-}
--(void)viewWillDisappear:(BOOL)animated{
-    
-    [self.testTimer invalidate];
-}
 -(void)buttonAction:(UIButton *)sender{
+    ViewController *vc = [[ViewController alloc] init];
     
-}
--(void)dealloc{
-    [self.testTimer invalidate];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 /*
 #pragma mark - Navigation

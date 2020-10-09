@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
 #import <AppOrderFiles.h>
+#import "WMTabBarViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -18,6 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //设置导航外观模块
+    [self setupWMappearence];
+    //设置启动模块
     [self setupRootVC];
 
 
@@ -27,11 +30,22 @@
 - (void)setupRootVC
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    ViewController *rootVC = [[ViewController alloc] init];
-    UINavigationController *rootNC = [[UINavigationController alloc] initWithRootViewController:rootVC];
+    self.window.backgroundColor = [UIColor whiteColor];
+    WMTabBarViewController *rootTabBar = [[WMTabBarViewController alloc] init];
+    UINavigationController *rootNC = [[UINavigationController alloc] initWithRootViewController:rootTabBar];
     self.window.rootViewController = rootNC;
+//    //其他对象需要时使用
+//    self.rootnavCtrl = rootNC;
+//    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     [self.window makeKeyAndVisible];
 }
+#pragma mark 设置 app 外观
+- (void)setupWMappearence {
+    //设置导航栏字体颜色与大小
+    [UINavigationBar appearance].titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor blackColor],
+                                                         NSFontAttributeName : [UIFont boldSystemFontOfSize:18]};
+}
+
 
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(nullable NSDictionary<UIApplicationLaunchOptionsKey, id> *)launchOptions {
     
@@ -58,10 +72,6 @@
     
     
 }
-#pragma mark 微博、微信分享、QQ相关的handleOpenURL方法
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
-{
-    return YES;
-}
+
 
 @end

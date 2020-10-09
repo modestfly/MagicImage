@@ -10,38 +10,131 @@
 #import "MainViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import "UIToastView.h"
+#import "Utilities.h"
+#import <CoreGraphics/CoreGraphics.h>
+#import "testView.h"
 @interface ViewController ()<UINavigationBarDelegate,UIImagePickerControllerDelegate>
 
 @property(nonatomic, strong)UIImagePickerController *imagePickerController;
 
 @property(nonatomic, strong)UIImageView *photoImageView;
+
 @end
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.navigationItem.title = @"测试";
+ 
+    self.view.backgroundColor = [UIColor lightGrayColor];
+    
+    testView *testV = [[testView alloc] initWithFrame:CGRectMake(0, 200, SCREEN_WIDTH, SCREEN_HEIGHT)];
+    
+    testV.backgroundColor = [UIColor lightGrayColor];
+    
+    
+    [self.view addSubview:testV];
+    
+    //一个不透明类型的Quartz 2D绘画环境,相当于一个画布,你可以在上面任意绘画
 
-    self.photoImageView = [[UIImageView alloc] initWithFrame:CGRectMake(100, 0, 100, 100)];
+        
+//    UIButton *btn2 = [UIButton buttonWithType:UIButtonTypeCustom];
+//    btn2.frame = CGRectMake(50, 130, 100, 100);
+//    [self.view addSubview:btn2];
+//    [btn2 setImage:[UIImage imageNamed:@"test"] forState:UIControlStateNormal];
+//    //方法一:部分控件进行遮挡
+//    UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
+//    btn1.frame = CGRectMake(50, 330, 100, 100);
+//    [self.view addSubview:btn1];
+//    [btn1 setImage:[UIImage imageNamed:@"test"] forState:UIControlStateNormal];
+//    UIView *label = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 20, 100)];
+//    label.backgroundColor = [UIColor lightGrayColor];
+//    [btn1 addSubview:label];
+//    UIView *labe2 = [[UIView alloc] initWithFrame:CGRectMake(20, 0, 80, 20)];
+//    labe2.backgroundColor = [UIColor lightGrayColor];
+//    [btn1 addSubview:labe2];
+//    //方法二：使用蒙层mask进行遮挡
+//    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    btn.frame = CGRectMake(180, 330, 100, 100);
+//    [self.view addSubview:btn];
+//    [btn setImage:[UIImage imageNamed:@"test"] forState:UIControlStateNormal];
+//    CAShapeLayer *mask = [CAShapeLayer new];
+//    mask.path = [UIBezierPath bezierPathWithRect:CGRectMake(20, 20,80, 80)].CGPath;
+//    btn.layer.mask = mask;
+
     
-    self.photoImageView.backgroundColor = [UIColor lightGrayColor];
     
-    [self.view addSubview:self.photoImageView];
+//    // 1. UIImageView
+//    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(50, 100, 300, 200)];
+//    imageView.image = [UIImage imageNamed:@"test"];
+//    [self.view addSubview:imageView];
+//
+//    // image + cornerRadius + masksToBounds 不会触发离屏渲染
+//    imageView.layer.cornerRadius = 10;
+//    imageView.layer.masksToBounds = YES;
+//
+//    // 触发离屏渲染
+//    imageView.backgroundColor = [UIColor greenColor];
+//    // 添加一个空的UIView不会触发离屏渲染
+//    // imageView.addSubview(UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 10)))
+//
+//    // 2. UIButton
+//    UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
+//    button.frame = CGRectMake(50, 350, 300, 50);
+//    [self.view addSubview:button];
+//    [button setTitle:@"Test" forState:UIControlStateNormal];
+//    [button setTintColor:[UIColor blueColor]];
+//    button.layer.cornerRadius = 10;
+//    button.layer.masksToBounds = YES;
+//
+//    // 触发离屏渲染
+//    button.backgroundColor = [UIColor greenColor];
+//    // 触发离屏渲染
+//    [button setBackgroundImage:[UIImage imageNamed:@"test"] forState:UIControlStateNormal];
+//
+//    // 3. UIView
+//    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(50, 450, 300, 50)];
+//    [self.view addSubview:view];
+//    view.backgroundColor = [UIColor redColor];
+//    view.layer.cornerRadius = 10;
+//    view.layer.masksToBounds = YES;
+//
+//    // label如果被渲染，则会触发渲染，如果text为空不会被渲染
+//    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, 1, 1)];
+//    label.text = @"1";
+//    [view addSubview:label];
     
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     
-    button.frame = CGRectMake(100, 100, 100, 100);
+
+//    self.photoImageView = [[UIImageView alloc] initWithFrame:CGRectMake(100, 500, 100, 100)];
+//
+//    self.photoImageView.backgroundColor = [UIColor greenColor];
+//
+//
+//    [self.view addSubview:self.photoImageView];
+//
+//    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+//
+//    button.frame = CGRectMake(100, 100, 100, 100);
+//
+//    [button setTitle:@"添加图片" forState:UIControlStateNormal];
+//
+//    button.backgroundColor = [UIColor redColor];
+//
+//    [button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
+//
+//    [self.view addSubview:button];
+//
     
-    [button setTitle:@"添加图片" forState:UIControlStateNormal];
-    
-    button.backgroundColor = [UIColor lightGrayColor];
-    
-    [button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
-    
-    [self.view addSubview:button];
+//
+//    NSLog(@"%@",self.view);
     
     // Do any additional setup after loading the view.
 }
+
 
 -(void)buttonAction:(UIButton *)sender{
     
@@ -74,6 +167,8 @@
         
         
     }];
+    
+    NSLog(@"UIAlertView:%@",alertController.view);
     
 //    MainViewController *mainVC = [[MainViewController  alloc]init];
 //
@@ -121,5 +216,10 @@
     
     self.photoImageView.image = iamge;
 }
+
+
+
     
 @end
+
+

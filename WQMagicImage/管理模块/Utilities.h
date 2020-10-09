@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
 NS_ASSUME_NONNULL_BEGIN
 
 //屏幕宽度
@@ -24,15 +24,19 @@ NS_ASSUME_NONNULL_BEGIN
 #define KTOASTLA CGRectMake((SCREEN_WIDTH - 200)/2.0, SCREEN_HEIGHT/2-50-NAVIGATIONBAR_HEIGHT, 200, 50)
 //判断设备的系统版本
 #define IOS7DEVICE ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
+//颜色转化
+#define WM_COLOR(RED, GREEN, BLUE, ALPHA)    [UIColor colorWithRed:RED green:GREEN blue:BLUE alpha:ALPHA]
 
 @interface Utilities : NSObject
 
 //去除前后空格
 +(NSString *)removeSpaceWitnString:(NSString*)string;
-//获取当前网络状态
+//获取当前网络状态WM
 +(NSString *)netWorkStates;
 //有关时间的解析
 +(NSDateFormatter *)dateFormateFromDateString:(NSString *)datsString;
+//根据颜色值设置颜色
++ (UIColor *)colorWithHexString: (NSString *) stringToConvert;
 
 @end
 
