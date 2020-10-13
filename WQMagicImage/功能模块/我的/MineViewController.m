@@ -7,11 +7,13 @@
 //
 
 #import "MineViewController.h"
-
+typedef struct node{
+    char *data;
+    struct node *next;
+} ListNode;
 @interface MineViewController ()
 
 @end
-
 @implementation MineViewController
 
 - (void)viewDidLoad {

@@ -28,6 +28,7 @@
 		5943E208253059700016D02C /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5943E207253059700016D02C /* MessageViewController.m */; };
 		5943E20B253059830016D02C /* MainPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5943E20A253059830016D02C /* MainPageViewController.m */; };
 		5943E20E253059AD0016D02C /* ToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5943E20D253059AD0016D02C /* ToolViewController.m */; };
+		5943E2102533F0120016D02C /* source.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5943E20F2533F0120016D02C /* source.bundle */; };
 		7CB8B2823563E5F03E7314C1 /* libPods-WQMagicImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C9A2EE59E22044DE8B1E29C /* libPods-WQMagicImage.a */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +90,7 @@
 		5943E20A253059830016D02C /* MainPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainPageViewController.m; sourceTree = "<group>"; };
 		5943E20C253059AD0016D02C /* ToolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToolViewController.h; sourceTree = "<group>"; };
 		5943E20D253059AD0016D02C /* ToolViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolViewController.m; sourceTree = "<group>"; };
+		5943E20F2533F0120016D02C /* source.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = source.bundle; sourceTree = "<group>"; };
 		5C9A2EE59E22044DE8B1E29C /* libPods-WQMagicImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WQMagicImage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A095BD0248442FAD1A4F86E2 /* Pods-WQMagicImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WQMagicImage.debug.xcconfig"; path = "Target Support Files/Pods-WQMagicImage/Pods-WQMagicImage.debug.xcconfig"; sourceTree = "<group>"; };
 		B5A5D2C621C4893DCC21A31E /* Pods-WQMagicImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WQMagicImage.release.xcconfig"; path = "Target Support Files/Pods-WQMagicImage/Pods-WQMagicImage.release.xcconfig"; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 			children = (
 				5943E1F32522FF740016D02C /* test.png */,
 				5943E1E4251C3ADB0016D02C /* image.order */,
+				5943E20F2533F0120016D02C /* source.bundle */,
 			);
 			path = "资源文件模块";
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 			files = (
 				5943E1E5251C3ADB0016D02C /* image.order in Resources */,
 				5943E1F42522FF740016D02C /* test.png in Resources */,
+				5943E2102533F0120016D02C /* source.bundle in Resources */,
 				5943E1B6251443580016D02C /* LaunchScreen.storyboard in Resources */,
 				5943E1B3251443580016D02C /* Assets.xcassets in Resources */,
 				5943E1B1251443550016D02C /* Main.storyboard in Resources */,

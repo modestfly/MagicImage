@@ -15,10 +15,15 @@ PODS:
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
   - AppOrderFiles (1.0.2)
+  - Bugly (2.5.71)
   - FBRetainCycleDetector (0.1.4)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
   - Masonry (1.1.0)
   - MLeaksFinder (1.0.0):
     - FBRetainCycleDetector
+  - Reachability (3.2)
   - SDWebImage (5.9.1):
     - SDWebImage/Core (= 5.9.1)
   - SDWebImage/Core (5.9.1)
@@ -26,27 +31,36 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 4.0.0)
   - AppOrderFiles (~> 1.0.2)
+  - Bugly (~> 2.5.71)
+  - FMDB (~> 2.7.5)
   - Masonry (~> 1.1.0)
   - MLeaksFinder
+  - Reachability (~> 3.2)
   - SDWebImage (~> 5.9.0)
 
 SPEC REPOS:
   trunk:
     - AFNetworking
     - AppOrderFiles
+    - Bugly
     - FBRetainCycleDetector
+    - FMDB
     - Masonry
     - MLeaksFinder
+    - Reachability
     - SDWebImage
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   AppOrderFiles: ce8436cdae89e5831b93961ebc81415a3481c5a6
+  Bugly: fd066c75c4a0eca1440f9b6a84bd37d51bfc85ac
   FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SDWebImage: a990c053fff71e388a10f3357edb0be17929c9c5
 
-PODFILE CHECKSUM: 97169d7aa17323d1c3853e2b1006a9db3b5af060
+PODFILE CHECKSUM: 1fdbee159da29d6eb33267211c7d6887edd0601c
 
 COCOAPODS: 1.9.3
